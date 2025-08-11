@@ -24,3 +24,42 @@ export const routes: Routes = [
 
   { path: '**', redirectTo: '404' }
 ];
+
+
+
+
+
+// import { Routes } from '@angular/router';
+// import { AuthGuard } from './guards/auth.gard';
+
+// export const routes: Routes = [
+//   // Default redirect to login page
+//   { path: '', redirectTo: 'auth/login', pathMatch: 'full' },
+
+//   // Public auth routes
+//   { path: 'auth/login', loadComponent: () => import('./features/auth/login/login').then(m => m.Login) },
+//   { path: 'auth/register', loadComponent: () => import('./features/auth/register/register').then(m => m.Register) },
+//   { path: 'auth/forgot', loadComponent: () => import('./features/auth/forget-passowrd/forget-passowrd').then(m => m.ForgetPassowrd) },
+
+//   // Protected routes with AuthGuard
+//   { path: 'home', loadComponent: () => import('./features/home/home').then(m => m.Home), canActivate: [AuthGuard] },
+
+//   { path: 'products', loadComponent: () => import('./features/products/product-detail/product-detail').then(m => m.ProductDetail), canActivate: [AuthGuard] },
+//   { path: 'product/:id', loadComponent: () => import('./features/products/product-detail/product-detail').then(m => m.ProductDetail), canActivate: [AuthGuard] },
+
+//   { path: 'cart', loadComponent: () => import('./features/cart/cart').then(m => m.Cart), canActivate: [AuthGuard] },
+
+//   { path: 'orders', loadComponent: () => import('./features/orders/order-detail/order-detail').then(m => m.OrderDetail), canActivate: [AuthGuard] },
+//   { path: 'order/:id', loadComponent: () => import('./features/orders/order-detail/order-detail').then(m => m.OrderDetail), canActivate: [AuthGuard] },
+
+//   { path: 'profile', loadComponent: () => import('./features/user-profile/user-profile').then(m => m.UserProfile), canActivate: [AuthGuard] },
+
+//   { path: 'chatbot', loadComponent: () => import('./features/ai-chatbot/ai-chatbot').then(m => m.AiChatbot), canActivate: [AuthGuard] },
+
+//   // Public error pages
+//   { path: '404', loadComponent: () => import('./shared/not-found/not-found').then(m => m.NotFound) },
+//   { path: 'access-denied', loadComponent: () => import('./shared/access-denied/access-denied').then(m => m.AccessDenied) },
+
+//   // Wildcard fallback route
+//   { path: '**', redirectTo: '404' }
+// ];
